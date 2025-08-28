@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our community garden with resources, events, and a registration form for workshops.">
+    <meta name="keywords" content="community garden, gardening workshops, eco-friendly gardening, garden resources">
+    <meta name="author" content="Community Garden Hub">
+    <title>Community Garden Hub - Resources & Workshop Registration</title>
+</head>
+<body>
+    <header>
+        <h1>Community Garden Hub</h1>
+        <p>Join our eco-friendly gardening community</p>
+    </header>
+
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="#home" aria-current="page">Home</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#register">Register</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home" aria-labelledby="welcome-heading">
+            <h2 id="welcome-heading">Welcome to Our Community Garden</h2>
+            <p>Our community garden promotes sustainable practices and offers workshops to help you grow your own food.</p>
+            <figure>
+                <img src="https://example.com/garden.jpg" alt="Vibrant community garden with diverse plants and gardeners working together">
+                <figcaption>Our thriving community garden in action</figcaption>
+            </figure>
+        </section>
+
+        <section id="resources" aria-labelledby="resources-heading">
+            <h2 id="resources-heading">Gardening Resources</h2>
+            <h3>Recommended Tools</h3>
+            <ul >
+                <li>Ergonomic hand trowel for planting</li>
+                <li>Durable pruning shears for trimming</li>
+                <li>Watering can with a fine rose for gentle watering</li>
+            </ul>
+            <h3>Soil Types and Uses</h3>
+            <table role="grid">
+                <caption>Common Soil Types for Gardening</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Soil Type</th>
+                        <th scope="col">Best For</th>
+                        <th scope="col">Drainage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Loam</td>
+                        <td>Most vegetables and flowers</td>
+                        <td>Moderate</td>
+                    </tr>
+                    <tr>
+                        <td>Clay</td>
+                        <td>Trees and shrubs</td>
+                        <td>Poor</td>
+                    </tr>
+                    <tr>
+                        <td>Sandy</td>
+                        <td>Root crops like carrots</td>
+                        <td>Excellent</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="events" aria-labelledby="events-heading">
+            <h2 id="events-heading">Upcoming Workshops</h2>
+            <p>Listen to our latest workshop introduction:</p>
+            <audio controls>
+                <source src="https://example.com/workshop-intro.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <h3>Workshop Schedule</h3>
+            <ol>
+                <li>Composting Basics - October 15, 2025</li>
+                <li>Native Plant Gardening - November 10, 2025</li>
+                <li>Water Conservation Techniques - December 5, 2025</li>
+            </ol>
+        </section>
+
+        <section id="register" aria-labelledby="register-heading">
+            <h2 id="register-heading">Register for a Workshop</h2>
+            <form action="/submit" method="post" novalidate>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required minlength="2" maxlength="50" placeholder="Enter your full name" autocomplete="name">
+                    
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required placeholder="example@domain.com" autocomplete="email">
+                    
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890" autocomplete="tel">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Workshop Selection</legend>
+                    <label for="workshop">Choose a Workshop:</label>
+                    <select id="workshop" name="workshop" required>
+                        <option value="" disabled selected>Select a workshop</option>
+                        <option value="composting">Composting Basics</option>
+                        <option value="native-plants">Native Plant Gardening</option>
+                        <option value="water-conservation">Water Conservation Techniques</option>
+                    </select><br>
+                    
+                    <label for="experience">Gardening Experience Level:</label>
+                    <div>
+                        <input type="radio" id="beginner" name="experience" value="beginner" required>
+                        <label for="beginner">Beginner</label>
+                        <input type="radio" id="intermediate" name="experience" value="intermediate">
+                        <label for="intermediate">Intermediate</label>
+                        <input type="radio" id="advanced" name="experience" value="advanced">
+                        <label for="advanced">Advanced</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <label for="date">Preferred Workshop Date:</label>
+                    <input type="date" id="date" name="date" min="2025-10-15" max="2025-12-31" required>
+                    
+                    <label for="comments">Comments or Questions:</label><br>
+                    <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Any additional information or questions"></textarea>
+                </fieldset>
+
+                <label for="newsletter">Subscribe to Newsletter:</label>
+                <input type="checkbox" id="newsletter" name="newsletter">
+                
+                <input type="submit" value="Register Now">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Community Garden Hub. All rights reserved.</p>
+        <p>Contact: <a href="mailto:info@gardenhub.com">info@gardenhub.com</a></p>
+    </footer>
+</body>
+</html>

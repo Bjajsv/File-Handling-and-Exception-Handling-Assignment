@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of Higher Education Courses - Russia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        table, td, th {
+            border: 1px solid #e5e7eb;
+            border-collapse: collapse;
+        }
+        td, th {
+            padding: 15px;
+        }
+        th {
+            text-align: left;
+        }
+        audio {
+            width: 100%;
+            max-width: 500px;
+        }
+        @media (max-width: 640px) {
+            td, th {
+                padding: 10px;
+            }
+            audio {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <div class="container mx-auto p-4 sm:p-6 lg:p-8">
+        <h1 class="text-3xl font-bold mb-6 text-center text-gray-800">List of Higher Education Courses - Russia</h1>
+        
+        <table class="w-full bg-white shadow-md rounded-lg overflow-hidden">
+            <thead class="bg-gray-200">
+                <tr>
+                    <th class="text-sm sm:text-base">No.</th>
+                    <th class="text-sm sm:text-base">Higher Education Level</th>
+                    <th class="text-sm sm:text-base">Name of Institution</th>
+                    <th class="text-sm sm:text-base">Training Period</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="hover:bg-gray-50">
+                    <td>1</td>
+                    <td>Specialist</td>
+                    <td>Moscow University</td>
+                    <td>5 Years</td>
+                </tr>
+                <tr class="hover:bg-gray-50">
+                    <td>2</td>
+                    <td>Specialist</td>
+                    <td>Saint-Petersburg University</td>
+                    <td>5 Years</td>
+                </tr>
+                <tr class="hover:bg-gray-50">
+                    <td>3</td>
+                    <td>Specialist</td>
+                    <td>Volgograd Academy</td>
+                    <td>4 Years</td>
+                </tr>
+                <tr class="hover:bg-gray-50">
+                    <td>4</td>
+                    <td>Bachelor</td>
+                    <td>Nizhny-Novgorod Academy</td>
+                    <td>4 Years</td>
+                </tr>
+                <tr class="hover:bg-gray-50">
+                    <td>5</td>
+                    <td>Specialist</td>
+                    <td rowspan="2">Krasnador University</td>
+                    <td>5 Years</td>
+                </tr>
+                <tr class="hover:bg-gray-50">
+                    <td>6</td>
+                    <td>Bachelor</td>
+                    <td>5 Years</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 class="text-2xl font-semibold mt-8 mb-4 text-gray-800">HTML Multimedia</h2>
+        <audio src="./02. Politics As Usual [RapShare].mp3" controls class="mb-6"></audio>
+
+        <h3 class="text-xl font-semibold mb-4 text-gray-800">Types of Lists</h3>
+        <div class="flex flex-col sm:flex-row gap-8 mb-6">
+            <div>
+                <strong>Ordered List</strong>
+                <ol type="a" class="list-outside ml-6">
+                    <li>Computer Science</li>
+                    <li>Engineering</li>
+                    <li>Mathematics</li>
+                    <li>Physics</li>
+                </ol>
+            </div>
+            <div>
+                <strong>Unordered List</strong>
+                <ul class="list-disc list-outside ml-6">
+                    <li>Medicine</li>
+                    <li>Law</li>
+                    <li>Economics</li>
+                    <li>Arts</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <p class="text-gray-700 mb-6">
+                In general, it’s a best practice to extract data from its source before analyzing it. Whether you’re using the data for data engineering, data analysis, or data science, you want to extract the data from its source, transform it, and load it into a serving layer. Such a process is also referred to as Extract, Transform, and Load (ETL) or Extract, Load, and Transform (ELT). The serving layer makes your data available for the service you use for further data processing like training machine learning models.
+                To move and transform data, you can use a data ingestion pipeline. A data ingestion pipeline is a sequence of tasks that move and transform the data. By creating a pipeline, you can choose to trigger the tasks manually or schedule the pipeline when you want the tasks to be automated. Such pipelines can be created with Azure services like Azure Synapse Analytics, Azure Databricks, and also Azure Machine Learning.
+            </p>
+            <img src="./38 Black Aesthetic Wallpaper Ideas for Your Iphone in 2019.jpeg" alt="Brazyy" class="w-full max-w-md mb-6 rounded-lg" style="max-width: 500px;">
+            
+            <form class="space-y-4">
+                <fieldset class="border p-4 rounded-lg">
+                    <legend class="text-lg font-semibold">Personal Info</legend>
+                    <div class="space-y-2">
+                        <label for="name" class="block text-sm font-medium">Name:</label>
+                        <input type="text" id="name" name="name" required class="w-full border rounded p-2">
+                        
+                        <label for="email" class="block text-sm font-medium">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" class="w-full border rounded p-2">
+                        
+                        <label for="phone" class="block text-sm font-medium">Phone Number:</label>
+                        <input type="text" id="phone" name="phone" class="w-full border rounded p-2">
+                        
+                        <label for="zip" class="block text-sm font-medium">Zip-code:</label>
+                        <input type="text" id="zip" name="zip" pattern="[0-9]{5}" title="Enter a 5-digit zip code" class="w-full border rounded p-2">
+                        
+                        <label for="password" class="block text-sm font-medium">Password:</label>
+                        <input type="password" id="password" name="password" minlength="8" maxlength="20" placeholder="Enter Password" required class="w-full border rounded p-2">
+                        
+                        <div class="space-y-2">
+                            <label class="flex items-center">
+                                <input type="checkbox" name="vehicle1" value="BMW X6" class="mr-2"> I have a BMW X6
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" name="vehicle2" value="Porsche Cayenne" class="mr-2"> I have a Porsche Cayenne
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" name="vehicle3" value="Mercedes GLE" class="mr-2"> I have a Mercedes GLE
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" name="vehicle4" value="Dodge Charger" class="mr-2"> I have a Dodge Charger
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+                
+                <textarea name="comments" rows="4" cols="50" placeholder="Write your comments here" class="w-full border rounded p-2"></textarea>
+                <button type="button" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
